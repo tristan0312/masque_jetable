@@ -1,6 +1,6 @@
 def crypto(mot, cle):
     nv_mot = ""
     for i in range(len(mot)):
-        nv_lettre = chr(ord(mot[i]) ^ ord(cle[i]))
+        nv_lettre = chr((mot[i]) ^ (cle[i]))
         nv_mot+=nv_lettre
     return nv_mot
